@@ -345,7 +345,7 @@ window.addEventListener("load", async () => {
             (function() {
               document.querySelector("ytmusic-app-layout>ytmusic-player-bar").playing ? document.querySelector("ytmusic-app-layout>ytmusic-player-bar").playerApi.pauseVideo() : document.querySelector("ytmusic-app-layout>ytmusic-player-bar").playerApi.playVideo();
             })
-          `)
+          `, true)
         )();
         break;
       }
@@ -356,7 +356,7 @@ window.addEventListener("load", async () => {
             (function() {
               document.querySelector("ytmusic-app-layout>ytmusic-player-bar").playerApi.playVideo();
             })
-          `)
+          `, true)
         )();
         break;
       }
@@ -367,7 +367,7 @@ window.addEventListener("load", async () => {
             (function() {
               document.querySelector("ytmusic-app-layout>ytmusic-player-bar").playerApi.pauseVideo();
             })
-          `)
+          `, true)
         )();
         break;
       }
@@ -378,7 +378,7 @@ window.addEventListener("load", async () => {
             (function() {
               document.querySelector("ytmusic-app-layout>ytmusic-player-bar").playerApi.nextVideo();
             })
-          `)
+          `, true)
         )();
         break;
       }
@@ -389,7 +389,7 @@ window.addEventListener("load", async () => {
             (function() {
               document.querySelector("ytmusic-app-layout>ytmusic-player-bar").playerApi.previousVideo();
             })
-          `)
+          `, true)
         )();
         break;
       }
@@ -508,7 +508,7 @@ window.addEventListener("load", async () => {
             (function(value) {
               document.querySelector("ytmusic-app-layout>ytmusic-player-bar").playerApi.seekTo(value);
             })
-          `)
+          `, true)
         )(value);
         break;
 
