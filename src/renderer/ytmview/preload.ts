@@ -90,6 +90,13 @@ function createStyleSheet() {
         height: auto;
         bottom: var(--ytmusic-player-page-player-bar-height);
       }
+
+      /* Browse pages scroll the document, so the classic scrollbar spans the whole window and runs
+         down the side of the fixed player bar, which then cannot reach the window edge. The wheel
+         and keyboard still scroll without it. Inner scrollers keep their own scrollbars. */
+      html {
+        scrollbar-width: none;
+      }
     `)
   );
   document.head.appendChild(css);
